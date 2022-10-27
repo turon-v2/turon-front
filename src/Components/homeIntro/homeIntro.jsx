@@ -19,7 +19,7 @@ function HomeIntro() {
                         <h1 className="homeIntro__title">Sizning oshxonadagi eng yaqin yordamchingiz!</h1>
                         <button className="homeIntro__btn">Ba’tafsil</button>
                     </div>
-                </div>
+                </div> 
             </div>
     </>
   )
