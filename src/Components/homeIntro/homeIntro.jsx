@@ -13,7 +13,7 @@ function HomeIntro() {
     <div className="container">
                 <div className="homeIntro__wrapper">
                     <div className="homeIntro__img--box">
-                        <Image src={homeIntroImg} alt="turon_un"/>
+                        <Image className="homeIntro__img" src={homeIntroImg} alt="turon_un"/>
                     </div>
                     <div className="homeIntro__block">
                         <h1 className="homeIntro__title">Sizning oshxonadagi eng yaqin yordamchingiz!</h1>

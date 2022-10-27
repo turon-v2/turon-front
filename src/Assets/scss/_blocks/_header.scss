@@ -84,9 +84,19 @@
 }
 @media only screen and (max-width: 425px){
     .header{
+        &__logo{
+            width: 120px;
+        }
         &__line{
             width: 52px;
             height: 6.5px;
+        }
+        &__burger{
+            &--box{
+                background-image: none;
+                width: 110px;
+                height: 100px;
+            }
         }
 }
 }

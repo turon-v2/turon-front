@@ -16,7 +16,7 @@
         &--box{
             margin-right: 83px;
         }
-    }
+    } 
     &__title{
         max-width: 914px;
         margin-bottom: 60px;
@@ -38,5 +38,121 @@
         line-height: 33px;
         color: #FFFFFF;
         cursor: pointer;
+    }
+}
+@media only screen and (max-width:1440px){
+    .homeIntro{
+        &__title{
+            font-size: 60px;
+            line-height: 80px;
+        } 
+    }
+}
+@media only screen and (max-width:1200px){
+    .homeIntro{
+        &__title{
+            font-size: 51px;
+            line-height: 80px;
+        } 
+        &__img{
+            max-width: 300px;
+            max-height: 280px;
+        }
+    }
+}
+@media only screen and (max-width:1060px){
+    .homeIntro{
+        &__title{
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+}
+@media only screen and (max-width:930px){
+    .homeIntro{
+        &__title{
+            font-size: 34px;
+        }
+        &__img{
+            max-width: 280px;
+            max-height: 250px;
+        }
+    }
+}
+@media only screen and (max-width:840px){
+    .homeIntro{
+        &__img{
+            max-width: 200px;
+            max-height: 180px;
+            &--box{
+                margin-right: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .homeIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 230px 0 105px;
+            background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/main_intro_bg.png");
+            background-size: 175px, cover, 100% 100%;
+        }
+        &__btn{
+            padding: 14px 40px;
+            font-size: 20px;
+            line-height: 33px;
+        }
+    }
+}
+@media only screen and (max-width:700px){
+    .homeIntro{
+        &__title{
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        &__img{
+            max-width: 220px;
+            max-height: 200px;
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .homeIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 200px 0 80px;
+            background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/main_intro_bg.png");
+            background-size: 150px, cover, 100% 100%;
+        }
+        &__btn{
+            padding: 10px 30px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__img{
+            max-width: 150px;
+            max-height: 140px;
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .homeIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 150px 0 50px;
+            background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/main_intro_bg.png");
+            background-size: 100px, cover, 100% 100%;
+        }
+        &__img{
+            max-width: 120px;
+            max-height: 110px;
+        }
+        &__title{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
     }
 }
