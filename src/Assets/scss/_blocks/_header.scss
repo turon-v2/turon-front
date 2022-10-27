@@ -1,0 +1,41 @@
+.header{
+    padding-top: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    // background-color: aqua;
+    text-align: center;
+    // background-image: url("../images/decor_1.png");
+    // background-repeat: no-repeat;
+    &__burger{
+        padding:86px 0 0 33px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        &--box{
+            width: 367px;
+            height: 214px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url("../../images/burger_bg.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__line{
+        display: inline-block;
+        margin-bottom: 8px;
+        width: 67px;
+        height: 8.5px;
+        background-image: url("../../images/burger_line.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
