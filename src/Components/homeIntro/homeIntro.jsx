@@ -16,7 +16,7 @@ function HomeIntro() {
                         <Image className="homeIntro__img" src={homeIntroImg} alt="turon_un"/>
                     </div>
                     <div className="homeIntro__block">
-                        <h1 className="homeIntro__title">Sizning oshxonadagi eng yaqin yordamchingiz!</h1>
+                        <h1 className="homeIntro__title">Oshxonangizdagi eng yaqin yordamchingiz!</h1>
                         <button className="homeIntro__btn">Ba’tafsil</button>
                     </div>
                 </div> 

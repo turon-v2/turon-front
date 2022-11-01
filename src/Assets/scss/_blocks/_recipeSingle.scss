@@ -1,0 +1,46 @@
+.recipeSingle{
+    &__wrapper{
+        // min-height: 750px;
+        padding: 278px 0 158px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../images/decor_1.png"), 
+        url("../../images/body_bg.png"),
+        url("../../images/recipe-single-intro.png");
+        background-repeat: no-repeat;
+        background-size: 240px, cover, 100% 100%;
+        background-position: top left, center, center;
+    }
+}
+@media only screen and (max-width:768px){
+    .productIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 230px 0 105px;
+              background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/recipe-single-intro.png");
+            background-size: 175px, cover, 100% 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .productIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 200px 0 80px;
+               background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/recipe-single-intro.png");
+            background-size: 150px, cover, 100% 100%;
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .productIntro{
+        &__wrapper{
+            // min-height: 750px;
+            padding: 150px 0 50px;
+               background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/recipe-single-intro.png");
+            background-size: 100px, cover, 100% 100%;
+        }
+    }
+}
