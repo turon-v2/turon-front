@@ -1,0 +1,260 @@
+.recipe{
+    margin-bottom: 120px;
+    &__wrapper{
+        // background-color: #FFFFFF;
+        border-radius: 30px;
+        padding: 70px 50px 55px;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0 0 40px 10px;
+        &-link{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: #352524;
+            &--inactive{
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 95px;
+    }
+    &__item{
+        max-width: 425px;
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        &-img{
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        &-playbtn{
+            padding: 12px 11px 12px 15px;
+            border-radius: 50%;
+            border: none;
+            background: #DF953A;
+            box-shadow: 0px 5px 18px rgba(223, 149, 58, 0.19);
+            cursor: pointer;
+        }
+        &-box{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // gap: 50px;
+            border-radius: 0 0 15px 15px;
+            padding: 0 25px 20px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+            transition: 0.2s;
+            &:hover{
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: center;
+    }
+    &__morebtn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 22px;
+        background-color: #DF953A;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        transition: 0.5s;
+        // border: 1px solid #DF953A;
+        // &:hover{
+        //     background-color: #FFFFFF;
+        //     color: #DF953A;
+        // }
+    }
+}
+@media only screen and (max-width: 1370px) {
+    .recipe{
+        &__item{
+            max-width: 380px;
+        }
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .recipe{
+        &__item{
+            max-width: 350px;
+            &-title{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1210px) {
+    .recipe{
+        &__item{
+            max-width: 330px;
+            &-title{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-box{
+                padding: 0 15px 10px;
+                &:hover{
+                    padding-bottom: 18px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .recipe{
+        &__list{
+            justify-content: space-around;
+            gap: 30px;
+        }
+        &__item{
+            max-width: 427px;
+            &-title{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &-box{
+                padding: 0 25px 20px;
+                &:hover{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .recipe{
+        &__item{
+            max-width: 380px;
+        }
+    }
+}
+@media only screen and (max-width: 890px) {
+    .recipe{
+        &__list{
+            gap: 10px;
+        }
+        &__item{
+            max-width: 350px;
+            margin-bottom: 15px;
+            &-title{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 810px) {
+    .recipe{
+        &__item{
+            max-width: 330px;
+            &-title{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-box{
+                padding: 0 15px 10px;
+                &:hover{
+                    padding-bottom: 18px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    .recipe{
+        &__list{
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+        &__item{
+            max-width: 427px;
+            &-title{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &-box{
+                padding: 0 25px 20px;
+                &:hover{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 470px) {
+    .recipe{
+        &__box{
+            display: none;
+        }
+        &__wrapper{
+            padding: 30px 25px 30px;
+        }
+        &__item{
+            &-box{
+                padding: 0 20px 12px;
+                &:hover{
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .recipe{
+        &__item{
+            &-title{
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    .recipe{
+        &__item{
+            &-title{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

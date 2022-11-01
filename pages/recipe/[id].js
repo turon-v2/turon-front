@@ -3,6 +3,7 @@ import Head from "next/head";
 // import Components
 import Layout from "../../src/Components/layout/layout";
 import RecipeSingleIntro from "../../src/Components/recipeSingle/recipeSingle";
+import SingleRecipes from "../../src/Components/singleRecipes/singleRecipes";
 
 export default function RecipeSingle() {
   return (
@@ -15,6 +16,7 @@ export default function RecipeSingle() {
 
       <Layout>
         <RecipeSingleIntro/>
+        <SingleRecipes/>
       </Layout>
     </>
 

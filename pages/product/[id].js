@@ -3,6 +3,7 @@ import Head from "next/head";
 // import Components
 import Layout from "../../src/Components/layout/layout";
 import ProductSingleIntro from "../../src/Components/productSingle/productSingle";
+import SinglePro from "../../src/Components/singlePro/singlePro";
 
 export default function ProductSingle() {
   return (
@@ -15,6 +16,7 @@ export default function ProductSingle() {
 
       <Layout>
         <ProductSingleIntro/>
+        <SinglePro/>
       </Layout>
     </>
 
