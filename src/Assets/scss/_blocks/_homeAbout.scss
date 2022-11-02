@@ -5,8 +5,9 @@
         max-width: 1415px;
         margin: 0 auto;
         margin-bottom: 268px; 
+        margin-left: 100px;
         font-size: 64px;
-        font-weight: 400;
+        font-weight: 400; 
         line-height: 101px;
         color: #CC1C08;
         margin-top: 150px;
@@ -71,15 +72,132 @@
 @media only screen and (max-width:1440px){
     .homeAbout{
         &__title{
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
+            margin-left: 100px;
+            text-align: left;
             margin-bottom: 220px; 
-            font-size: 54px;
-            line-height: 80px;
+            font-size: 50px;
+            line-height: 72px;
             font-weight: 500;
             color: #CC1C08;
             margin-top: 150px;
+         
+        }
+    }
+}
+@media only screen and (max-width:1240px){
+    .homeAbout{
+        &__title{
+            margin-bottom: 180px; 
+            font-size: 40px;
+            line-height: 60px;
+            margin-top: 120px;
+         
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .homeAbout{
+        &__title{
+            margin-bottom: 160px; 
+            font-size: 32px;
+            line-height: 50px;
+            margin-top: 100px;
+            &::before{
+                font-size: 100px;
+                line-height: 110px;
+            }
+            &::after{
+                font-size: 100px;
+                line-height: 110px;
+            }
+         
+        }
+    }
+}
+@media only screen and (max-width:840px){
+    .homeAbout{
+        &__title{
+            margin-left: 80px;
+            &::before{
+                margin-left: -80px;
+            }
+            &::after{
+                margin-left: 15px;
+            }
+         
+        }
+    }
+}
+@media only screen and (max-width:700px){
+    .homeAbout{
+        &__title{
+            font-size: 28px;
+            line-height: 40px;
+            margin: 80px 0 120px 80px;
+            &::before{
+                font-size: 80px;
+                line-height: 80px;
+                margin-left: -65px;
+            }
+            &::after{
+                font-size: 80px;
+                line-height: 124px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 610px){
+    .homeAbout{
+        &__title{
+            font-size: 24px;
+            line-height: 32px;
+            margin-left:50px;
+            &::before{
+                font-size: 60px;
+                line-height: 55px;
+                margin-left: -50px;
+            }
+            &::after{
+                font-size: 60px;
+                line-height: 100px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 510px){
+    .homeAbout{
+        &__title{
+            font-size: 20px;
+            line-height: 32px;
+            margin-left: 35px;
+            &::before{
+                font-size: 45px;
+                margin-left: -35px;
+            }
+            &::after{
+                font-size: 45px;
+                line-height: 100px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 410px){
+    .homeAbout{
+        &__title{
+            font-size: 18px;
+            line-height: 28px;
+            margin-left: 25px;
+            &::before{
+                font-size: 35px;
+                margin-left: -25px;
+                line-height: 35px;
+            }
+            &::after{
+                font-size: 35px;
+                line-height: 120px;
+                margin-left: 5px;
+            }
         }
     }
 }

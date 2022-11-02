@@ -8,7 +8,7 @@ import Wheat from "../../Assets/images/wheat.jpg"
 function HomeAbout() {
 
     return (
-        <>
+        <> 
             <div className="container">
                 <h2 className="homeAbout__title"><span>Turon — </span>  maqsadi iste’molchilarga hamyonbop narxlarda sifatli mahsulot taqdim etish bo’lgan kompaniya.</h2>
 
