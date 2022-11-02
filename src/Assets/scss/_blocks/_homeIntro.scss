@@ -1,18 +1,18 @@
 .homeIntro{
+    background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/main_intro_bg.png");
+    background-repeat: no-repeat;
+    background-size: 240px, cover, 100% 100%;
+    background-position: top left, center, center;
     &__wrapper{
-        // min-height: 750px;
         padding: 278px 0 158px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/main_intro_bg.png");
-        background-repeat: no-repeat;
-        background-size: 240px, cover, 100% 100%;
-        background-position: top left, center, center;
     }
     &__img{
         width: 503px;
         height: 390px;
+        object-fit: contain;
         &--box{
             margin-right: 83px;
         }

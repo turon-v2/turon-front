@@ -17,10 +17,10 @@ function Header() {
               <Image className="header__logo" src={Logo} alt="logo" width="237" height="87"/>
               </Link> 
             <div className="header__burger--box">
-                <button  className="header__burger">
+                <button  className="header__burger ">
+                    <span className="header__line"></span>
                     <span className="header__line"></span>
                     <span className="header__line"></span> 
-                    <span className="header__line"></span>
                 </button>
             </div>
         </div>
