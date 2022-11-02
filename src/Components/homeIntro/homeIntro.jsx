@@ -26,6 +26,10 @@ function HomeIntro() {
       </div>
     </section>
   );
+    <>
+
+    </>
+  )
 }
 
 export default HomeIntro;

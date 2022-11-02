@@ -4,7 +4,7 @@
     &__title{
         max-width: 1415px;
         margin: 0 auto;
-        margin-bottom: 268px;
+        margin-bottom: 268px; 
         font-size: 64px;
         font-weight: 400;
         line-height: 101px;
@@ -66,5 +66,20 @@
     }
     &__block{
         max-width: 984px;
+    }
+}
+@media only screen and (max-width:1440px){
+    .homeAbout{
+        &__title{
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 220px; 
+            font-size: 54px;
+            line-height: 80px;
+            font-weight: 500;
+            color: #CC1C08;
+            margin-top: 150px;
+        }
     }
 }
