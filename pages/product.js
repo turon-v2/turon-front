@@ -3,7 +3,7 @@ import Head from "next/head";
 // import Components
 import Layout from "../src/Components/layout/layout";
 import ProductIntro from "../src/Components/productIntro/productIntro";
-import Products from "../src/Components/products/Products";
+import Products from "../src/Components/products/products";
 
 export default function Product() {
   return (
