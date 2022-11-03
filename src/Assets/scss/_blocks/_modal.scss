@@ -1,0 +1,73 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    background-image: url("../../images/body_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    visibility: hidden;
+    transition: 0.3s;
+    opacity: 0.5;
+    &--active{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__list{
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "home . product"
+        "precipe about contact";
+    }
+    &__item{
+        margin-bottom: 40px;
+        &:first-child a{
+            grid-area: home;
+        }
+        &:nth-child(2){
+            grid-area: product;
+        }
+        &:nth-child(3){
+            grid-area: precipe;
+        }
+        &:nth-child(4){
+            grid-area: about;
+        }
+        &:nth-child(5){
+            grid-area: contact;
+        }
+    }
+    &__link{
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 92px;
+        color: #D42117;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .modal{
+        &__item{
+        margin-bottom: 15px;
+        }
+        &__list{
+            grid-template-areas: 
+            "home"
+            "product"
+            "precipe"
+            "about"
+            "contact";
+        }
+        &__link{
+        font-size: 40px;
+        line-height: normal;
+        }
+    }
+}
