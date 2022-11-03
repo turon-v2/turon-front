@@ -1,5 +1,4 @@
 .homeAbout{
-    // margin-top: 150px;
     padding: 160px 0 300px;
     &__title{
         max-width: 1415px;
@@ -25,6 +24,7 @@
             line-height: 174px;
             color: #ECC962;
             transform: rotate(180deg);
+            z-index: 1;
         }
         &::after{
             margin-top: -50px;
@@ -36,12 +36,13 @@
             font-size: 128px;
             line-height: 174px;
             color: #ECC962;
+            z-index: 1;
         }
     }
     &__wrapper{
         display: flex;
-        justify-content: center;
-        // row-gap: 120px;
+        justify-content: space-between;
+        align-items: center;
     }
     &__subtitle{
         font-weight: 800;
@@ -61,217 +62,40 @@
         }
     }
     &__img{
-        transform: rotate(-8.9deg);
+        width: 445px;
+        height: 650px;
+        object-fit: cover;
     }
     &__box{
         margin-right: 120px;
+        transform: rotate(-8.9deg) translate(50px, 0);
     }
     &__block{
         max-width: 984px;
-        width: 100%;
     }
 }
-@media only screen and (max-width:1600px){
+
+@media screen and (max-width: 1600px) {
     .homeAbout{
         &__subtitle{
-            font-weight: 800;
-            font-size: 50px;
-            line-height: 80px;
-        }
-        &__text{
-            font-size: 32px;
-            line-height: 48px;
+            font-size: 56px;
         }
         &__block{
-            max-width: 800px;
-            width: 100%;
+            width: 57vw;
         }
     }
 }
-@media only screen and (max-width:1440px){
+@media screen and (max-width: 1150px){
     .homeAbout{
         &__title{
-            margin-left: 100px;
-            text-align: left;
-            margin-bottom: 220px; 
-            font-size: 50px;
-            line-height: 72px;
-            font-weight: 500;
-            color: #CC1C08;
-            margin-top: 150px;
-            
+            display: inline-block;
+            width: 548px;
+            margin-left: 0;
+            text-align: center;
         }
-        &__subtitle{
-            font-weight: 800;
-            font-size: 45px;
-            line-height: 80px;
-        }
-        &__text{
-            font-size: 28px;
-            line-height: 48px;
-        }
-        &__block{
-            max-width: 700px;
-            width: 100%;
-        }
-        &__box{
-            margin-right: 100px;
-        }
-    }
-}
-@media only screen and (max-width:1300px){
-    .homeAbout{
-        &__block{
-            max-width: 650px;
-        }
-        &__img{
-            max-width: 450px;
-            width: 100%;
-        }
-    }
-}
-@media only screen and (max-width:1240px){
-    .homeAbout{
-        &__title{
-            margin-bottom: 180px; 
-            font-size: 40px;
-            line-height: 60px;
-            margin-top: 120px;
-            
-        }
-        &__subtitle{
-            font-weight: 800;
-            font-size: 45px;
-            line-height: 80px;
-        }
-        &__text{
-            font-size: 24px;
-            line-height: 40px;
-            margin: 35px 0;
-        }
-        &__block{
-            max-width: 600px;
-        }
-        &__img{
-            max-width: 400px;
-            width: 100%;
-            margin-left: 20px;
-        }
-    }
-}
-@media only screen and (max-width:1024px){
-    .homeAbout{
-        &__title{
-            margin-bottom: 160px; 
-            font-size: 32px;
-            line-height: 50px;
-            margin-top: 100px;
-            &::before{
-                font-size: 100px;
-                line-height: 110px;
-            }
-            &::after{
-                font-size: 100px;
-                line-height: 110px;
-            }
-            
-        }
-        &__block{
-            max-width: 550px;
-        }
-        &__img{
-            max-width: 350px;
-            margin-left: 20px;
-        }
-        &__box{
-            margin-right: 60px;
-        }
-    }
-}
-@media only screen and (max-width:840px){
-    .homeAbout{
-        &__title{
-            margin-left: 80px;
-            &::before{
-                margin-left: -80px;
-            }
-            &::after{
-                margin-left: 15px;
-            }
-            
-        }
-    }
-}
-@media only screen and (max-width:700px){
-    .homeAbout{
-        &__title{
-            font-size: 28px;
-            line-height: 40px;
-            margin: 80px 0 120px 80px;
-            &::before{
-                font-size: 80px;
-                line-height: 80px;
-                margin-left: -65px;
-            }
-            &::after{
-                font-size: 80px;
-                line-height: 124px;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 610px){
-    .homeAbout{
-        &__title{
-            font-size: 24px;
-            line-height: 32px;
-            margin-left:50px;
-            &::before{
-                font-size: 60px;
-                line-height: 55px;
-                margin-left: -50px;
-            }
-            &::after{
-                font-size: 60px;
-                line-height: 100px;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 510px){
-    .homeAbout{
-        &__title{
-            font-size: 20px;
-            line-height: 32px;
-            margin-left: 35px;
-            &::before{
-                font-size: 45px;
-                margin-left: -35px;
-            }
-            &::after{
-                font-size: 45px;
-                line-height: 100px;
-                margin-left: 10px;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 410px){
-    .homeAbout{
-        &__title{
-            font-size: 18px;
-            line-height: 28px;
-            margin-left: 25px;
-            &::before{
-                font-size: 35px;
-                margin-left: -25px;
-                line-height: 35px;
-            } 
-            &::after{
-                font-size: 35px;
-                line-height: 120px;
-                margin-left: 5px;
-            }
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
