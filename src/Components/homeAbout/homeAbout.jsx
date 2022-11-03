@@ -20,7 +20,7 @@ function HomeAbout() {
                         <h3 className="homeAbout__subtitle">Kompaniya haqida</h3>
                         <p className="homeAbout__text"><span>«DIAMANTE GROUP»</span> kompaniyasi O‘zbekiston bozorida 2015-yildan buyon o’z faoliyatini yuritib kelayotgan eng yirik un ishlab chiqaruvchi kompaniyalardan biri. Faoliyatimiz davomida biz don mahsulotlarini tayyorlash, saqlash va qayta ishlash bo‘yicha katta tajribaga ega bo‘ldik... </p>
                         <button className="homeIntro__btn">Ba’tafsil</button>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </>
