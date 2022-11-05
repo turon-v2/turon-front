@@ -22,12 +22,12 @@
     &__list{
         height: auto;
         display: grid;
+        gap: 60px;
         grid-template-areas: 
         "home . product"
         "precipe about contact";
     }
     &__item{
-        margin-bottom: 40px;
         &:first-child a{
             grid-area: home;
         }
@@ -54,10 +54,8 @@
 
 @media screen and (max-width: 1024px) {
     .modal{
-        &__item{
-        margin-bottom: 15px;
-        }
         &__list{
+            gap: 15px;
             grid-template-areas: 
             "home"
             "product"
@@ -66,8 +64,8 @@
             "contact";
         }
         &__link{
-        font-size: 40px;
-        line-height: normal;
+            font-size: 40px;
+            line-height: normal;
         }
     }
 }
