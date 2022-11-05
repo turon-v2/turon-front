@@ -233,7 +233,7 @@
   @media only screen and (max-width: 798px) {
     
     .product{
-      
+      margin-top: 80px;
       &__card{
         padding: 21px;
         width: 529px;
@@ -250,6 +250,7 @@
   
   @media only screen and (max-width: 798px) {
     .product{
+      margin-top: 70px;
       &__wrapper{
         row-gap: 60px;
         column-gap: 20px;
@@ -298,6 +299,7 @@
   
   @media only screen and (max-width: 550px) {
     .product{
+      margin-top: 60px;
       &__wrapper{
         row-gap: 60px;
         column-gap: 20px;
@@ -398,6 +400,7 @@
   }
   @media only screen and (max-width: 425px) {
     .product{
+      margin-top: 50px;
       &__img{
         width: 150px;
         height: 200px;
