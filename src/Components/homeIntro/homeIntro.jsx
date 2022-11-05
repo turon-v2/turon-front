@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { LinkBtn } from "../link-btn/linkBtn";
 
 // import images
 import homeIntroImg from "../../Assets/images/turon_un_3.png";
@@ -20,7 +20,7 @@ function HomeIntro() {
             <h1 className="homeIntro__title">
               Sizning oshxonadagi eng yaqin yordamchingiz!
             </h1>
-            <button className="homeIntro__btn">Batafsil</button>
+            <LinkBtn href="/about" bgcolor="#CC1C08">Batafsil</LinkBtn>
           </div>
         </div>
       </div>

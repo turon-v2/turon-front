@@ -1,0 +1,29 @@
+.linkbtn{
+    display: inline-block;
+    padding: 19px 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background-color: #25317B;
+    fill: #25317B !important;
+    -webkit-mask-image: url("../../images/btn_bg.svg");
+    mask-image: url("../../images/btn_bg.svg");
+    background-repeat: no-repeat;
+    mask-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .linkbtn{
+        padding: 14px 80px;
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .linkbtn{
+        padding: 8px 80px;
+        font-size: 15px;
+    }
+}
