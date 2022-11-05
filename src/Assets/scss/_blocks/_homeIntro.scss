@@ -25,21 +25,6 @@
         line-height: 92px;
         color: #D42117;
     }
-    &__btn{
-        display: inline-block;
-        padding: 19px 54px;
-        background-image: url("../../images/btn_bg.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border: none;
-        background-color: transparent;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        color: #FFFFFF;
-        cursor: pointer;
-    }
 }
 @media only screen and (max-width:1300px){
     .homeIntro{
@@ -85,11 +70,6 @@
             line-height: 60px;
             margin-bottom: 20px;
         }
-        &__btn{
-            padding: 14px 80px;
-            font-size: 20px;
-            line-height: 33px;
-        }
     }
 }
 @media screen and (max-width: 425px) {
@@ -104,10 +84,6 @@
         &__title{
             font-size: 33px;
             line-height: normal;
-        }
-        &__btn{
-            padding: 8px 80px;
-            font-size: 15px;
         }
     }
 }

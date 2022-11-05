@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LinkBtn } from "../link-btn/linkBtn";
 import Link from "next/link";
 
 import productImage from "../../Assets/images/product_gr.png";
@@ -16,13 +17,10 @@ export const HomeProduct = () => {
               mazali ta'mlar bilan yaqinlarini quvontirishni yaxshi ko'radigan
               pazandalarimiz uchun mo'ljallangan.
             </p>
-            <Link className="hproduct__link" rel="stylesheet" href="/product">
-              Batafsil
-              {/* <Image src={btnImg}></Image> */}
-            </Link>
+            <LinkBtn href="/product" bgcolor="#25317B">Batafsil</LinkBtn>
           </div>
           <div className="hproduct__bside">
-            <Image src={productImage} />
+            <Image src={productImage} alt="product_image"/>
           </div>
         </div>
       </div>

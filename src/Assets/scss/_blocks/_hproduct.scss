@@ -1,4 +1,5 @@
 .hproduct{
+    padding: 100px 0  150px;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -30,22 +31,6 @@
         font-size: 40px;
         line-height: 66px;
         color: #25317B;
-    }
-    &__link{
-        display: inline-block;
-        padding: 19px 58px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        color: #FFFFFF;
-        // background-image: url("../../images/btn_bg.svg");
-        background-color: #25317B;
-        fill: #25317B !important;
-        -webkit-mask-image: url("../../images/btn_bg.svg");
-        mask-image: url("../../images/btn_bg.svg");
-        background-repeat: no-repeat;
-        // background-size: cover;
-        mask-size: cover;
     }
 }
 

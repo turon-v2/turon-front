@@ -5,6 +5,7 @@ import Layout from "../src/Components/layout/layout";
 import HomeIntro from "../src/Components/homeIntro/homeIntro";
 import HomeAbout from "../src/Components/homeAbout/homeAbout";
 import { HomeProduct } from "../src/Components/home-product/homeProduct";
+import { HomeKitchen } from "../src/Components/home-kitchen/homeKitchen";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <HomeIntro/>
           <HomeAbout/>
           <HomeProduct />
+          <HomeKitchen />
       </Layout>
     </>
 

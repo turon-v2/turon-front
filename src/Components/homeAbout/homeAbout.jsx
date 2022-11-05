@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // import images
 import Wheat from "../../Assets/images/wheat.jpg";
+import { LinkBtn } from "../link-btn/linkBtn";
 
 function HomeAbout() {
   return (
@@ -33,7 +34,7 @@ function HomeAbout() {
                 davomida biz don mahsulotlarini tayyorlash, saqlash va qayta
                 ishlash bo‘yicha katta tajribaga ega bo‘ldik...{" "}
               </p>
-              <Link href="/about" rel="stylesheet" className="homeIntro__btn">Batafsil</Link>
+              <LinkBtn href="/about" bgcolor="#CC1C08">Batafsil</LinkBtn>
             </div>
           </div>
         </div>
