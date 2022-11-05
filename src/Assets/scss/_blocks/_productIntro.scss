@@ -1,44 +1,54 @@
-.productIntro{
-    &__wrapper{
-        // min-height: 750px;
-        padding: 278px 0 158px;
+.productIntro {
+    background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/prod-intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: 240px, cover, cover;
+    background-position: top left, center, center;
+
+    &__wrapper {
+        position: relative;
+        padding: 278px 0 600px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/prod-intro-bg.png");
-        background-repeat: no-repeat;
-        background-size: 240px, cover, 100% 100%;
-        background-position: top left, center, center;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    &__video {
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        max-width: 100%;
     }
 }
-@media only screen and (max-width:768px){
-    .productIntro{
+
+@media only screen and (max-width:1440px) {
+    .productIntro {
         &__wrapper{
-            // min-height: 750px;
-            padding: 230px 0 105px;
-              background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/prod-intro-bg.png");
-            background-size: 175px, cover, 100% 100%;
+            padding: 278px 0 380px;
+        }
+        &__video{
+            max-width: 70%;
+            max-height: 80%;
         }
     }
 }
 
-@media only screen and (max-width:600px){
-    .productIntro{
-        &__wrapper{
-            // min-height: 750px;
-            padding: 200px 0 80px;
-               background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/prod-intro-bg.png");
-            background-size: 150px, cover, 100% 100%;
-        }
+@media only screen and (max-width:768px) {
+    .productIntro {
+        background-size: 22vw, cover, cover;
+        // &__wrapper{
+        //     flex-direction: column-reverse;
+        //     padding: 230px 0 105px;
+        //     padding: 30vw 0 13vw;
+        // }
     }
 }
-@media only screen and (max-width:600px){
-    .productIntro{
-        &__wrapper{
-            // min-height: 750px;
-            padding: 150px 0 50px;
-               background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/prod-intro-bg.png");
-            background-size: 100px, cover, 100% 100%;
-        }
+
+@media screen and (max-width: 425px) {
+    .productIntro {
+        background-size: 120px, cover, cover;
+        // &__wrapper{
+        //     padding: 50vw 0 25vw;
+        // }
     }
 }
