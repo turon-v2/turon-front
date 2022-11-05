@@ -1,4 +1,5 @@
 .product{
+  margin-top: 150px;
     padding: 100px 0;
     &__caption{
       font-weight: 800;
@@ -139,6 +140,7 @@
   
   @media only screen and (max-width: 1528px) {
     .product{
+      margin-top: 120px;
       &__wrapper{
         margin-top: 50px;
       }
@@ -187,6 +189,7 @@
   
   @media only screen and (max-width: 1128px) {
     .product{
+      margin-top: 100px;
       &__img{
         width: 280px;
       }
@@ -230,7 +233,7 @@
   @media only screen and (max-width: 798px) {
     
     .product{
-      
+      margin-top: 80px;
       &__card{
         padding: 21px;
         width: 529px;
@@ -247,6 +250,7 @@
   
   @media only screen and (max-width: 798px) {
     .product{
+      margin-top: 70px;
       &__wrapper{
         row-gap: 60px;
         column-gap: 20px;
@@ -295,6 +299,7 @@
   
   @media only screen and (max-width: 550px) {
     .product{
+      margin-top: 60px;
       &__wrapper{
         row-gap: 60px;
         column-gap: 20px;
@@ -395,6 +400,7 @@
   }
   @media only screen and (max-width: 425px) {
     .product{
+      margin-top: 50px;
       &__img{
         width: 150px;
         height: 200px;

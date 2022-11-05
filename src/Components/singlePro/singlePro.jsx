@@ -12,7 +12,7 @@ function SinglePro() {
     const share_down = useRef()
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+    }, []) 
 
     const openShare = e => {
         e.preventDefault()
