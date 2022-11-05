@@ -1,0 +1,95 @@
+.hproduct{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__aside{
+        width: 900px;
+        max-width: 100%;
+    }
+    &__bside{
+        width: 657px;
+        max-width: 100%;
+        & img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 87px;
+        letter-spacing: 0.06em;
+        color: #25317B;
+    }
+    &__text{
+        margin: 40px 0 45px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 66px;
+        color: #25317B;
+    }
+    &__link{
+        display: inline-block;
+        padding: 19px 58px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        // background-image: url("../../images/btn_bg.svg");
+        background-color: #25317B;
+        fill: #25317B !important;
+        -webkit-mask-image: url("../../images/btn_bg.svg");
+        mask-image: url("../../images/btn_bg.svg");
+        background-repeat: no-repeat;
+        // background-size: cover;
+        mask-size: cover;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .hproduct{
+        &__wrapper{
+            flex-direction: column;
+            text-align: center;
+        }
+        &__aside{
+            width: 100%;
+        }
+        &__bside{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hproduct{
+        padding-top: 40px;
+        &__title{
+            font-size: 8vw;
+            line-height: normal;
+        }
+        &__bside{
+            width: 95%;
+        }
+        &__text{
+            margin: 20px 0 25px;
+            font-size: 5vw;
+            line-height: normal;
+        }
+        &__link{
+            padding: 14px 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hproduct{
+        &__link{
+            padding: 8px 80px;
+            font-size: 15px;
+        }
+    }
+}

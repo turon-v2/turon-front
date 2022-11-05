@@ -33,7 +33,7 @@ function HomeAbout() {
                 davomida biz don mahsulotlarini tayyorlash, saqlash va qayta
                 ishlash bo‘yicha katta tajribaga ega bo‘ldik...{" "}
               </p>
-              <button className="homeIntro__btn">Ba’tafsil</button>
+              <Link href="/about" rel="stylesheet" className="homeIntro__btn">Batafsil</Link>
             </div>
           </div>
         </div>
