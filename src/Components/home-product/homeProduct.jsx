@@ -13,9 +13,9 @@ export const HomeProduct = () => {
           <div className="hproduct__aside">
             <h2 className="hproduct__title">Bizning mahsulotlar</h2>
             <p className="hproduct__text">
-              Turon unlari oshxonada o'z ijodini namoyon etishni, yangi va
-              mazali ta'mlar bilan yaqinlarini quvontirishni yaxshi ko'radigan
-              pazandalarimiz uchun mo'ljallangan.
+              Turon unlari oshxonada o`z ijodini namoyon etishni, yangi va
+              mazali ta`mlar bilan yaqinlarini quvontirishni yaxshi ko`radigan
+              pazandalarimiz uchun mo`ljallangan.
             </p>
             <LinkBtn href="/product" bgcolor="#25317B">Batafsil</LinkBtn>
           </div>
