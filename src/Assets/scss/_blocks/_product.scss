@@ -98,6 +98,10 @@
     
     &__img{
       width: 342px;
+      transition: transform .2s;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
     &--img2{
       width: 404px;
@@ -390,7 +394,7 @@
         }
       }
       &--card6{
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; 
         &:hover{
           transform: scale(1.1);
           box-shadow: 0 0 5px #29CAC0;
