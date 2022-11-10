@@ -3,7 +3,7 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 // import FooterMobile from '../footer-mobile/footer-mobile'
 
-const layout = ({ children }) => {
+const layout = ({ children, bgPathLay }) => {
 
   return (
     <>
@@ -11,9 +11,8 @@ const layout = ({ children }) => {
         <Header />
       </header>
       <main className="main">{children}</main>
-      <footer className="footer">
-        <Footer />
-        {/* <FooterMobile /> */}
+      <footer className="footer" >
+        <Footer bgPath={bgPathLay}/>
       </footer>
     </>
   );

@@ -14,7 +14,7 @@ export default function Product() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout bgPathLay="product">
         <ProductIntro/>
         <Products/>
       </Layout>

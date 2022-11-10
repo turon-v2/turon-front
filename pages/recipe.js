@@ -6,7 +6,7 @@ import ProductIntro from "../src/Components/productIntro/productIntro";
 import RecipeIntro from "../src/Components/recipeIntro/recipeIntro";
 import Recipes from "../src/Components/recipes/recipes";
 
-export default function Product() {
+export default function Recipe() {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ export default function Product() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout bgPathLay="recipe">
         <RecipeIntro/>
         <Recipes/>
       </Layout>

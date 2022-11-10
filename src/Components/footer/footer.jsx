@@ -7,9 +7,9 @@ import Svg from "../../Assets/svg"
 
 
 
-function Footer() {
+function Footer({bgPath}) {
   return (
-    <div className="footer__wrapper">
+    <div className={`footer__wrapper--${bgPath}`}>
       <div className="container">
         <Svg />
         <nav className="footer__nav">
