@@ -1,23 +1,22 @@
 .footer{
     &__wrapper{
+        padding: 135px 0 35px;
+        background-repeat: no-repeat;
+        background-size: 250px, 460px, cover;
+        background-position: top left, right bottom, center;
         &--home{
-            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/home-footer-bg.png");
         }
         &--about{
-            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/about-footer-bg.png");
         }
         &--product{
-            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/product-footer-bg.png");
         }
         &--recipe{
-            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/recipe-footer-bg.png");
         }
         &--contact{
-            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/contact-footer-bg.png");
         }
     }
@@ -184,6 +183,24 @@
         }
     }
 }
+@media only screen and (max-width: 1440px){
+.footer{
+    &__wrapper{
+            background-size: 16vw,  28vw, cover;
+    }
+}}
+@media only screen and (max-width: 768px){
+.footer{
+    &__wrapper{
+            background-size: 18vw,  35vw, cover;
+    }
+}}
+@media only screen and (max-width: 768px){
+.footer{
+    &__wrapper{
+            background-size: 25vw,  50vw, cover;
+    }
+}}
 @media screen and (max-width: 1500px) {
     .footer{
         &__list{
