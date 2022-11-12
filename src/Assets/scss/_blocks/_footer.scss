@@ -183,24 +183,7 @@
         }
     }
 }
-@media only screen and (max-width: 1440px){
-.footer{
-    &__wrapper{
-            background-size: 16vw,  28vw, cover;
-    }
-}}
-@media only screen and (max-width: 768px){
-.footer{
-    &__wrapper{
-            background-size: 18vw,  35vw, cover;
-    }
-}}
-@media only screen and (max-width: 768px){
-.footer{
-    &__wrapper{
-            background-size: 25vw,  50vw, cover;
-    }
-}}
+
 @media screen and (max-width: 1500px) {
     .footer{
         &__list{
@@ -212,6 +195,12 @@
         }
     }
 }
+@media only screen and (max-width: 1440px){
+.footer{
+    &__wrapper{
+            background-size: 16vw,  28vw, cover;
+    }
+}}
 @media screen and (max-width: 1250px) {
     .footer{
         &__list{
@@ -246,6 +235,7 @@
 @media screen and (max-width: 768px) {
     .footer{
         &__wrapper{
+            background-size: 25vw,  50vw, cover;
             padding: 50px 0 30px;
         }
         &__list{
