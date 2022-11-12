@@ -1,23 +1,23 @@
 .footer{
     &__wrapper{
         &--home{
-            @include footer;
+            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/home-footer-bg.png");
         }
         &--about{
-            @include footer;
+            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/about-footer-bg.png");
         }
         &--product{
-            @include footer;
+            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/product-footer-bg.png");
         }
         &--recipe{
-            @include footer;
+            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/recipe-footer-bg.png");
         }
         &--contact{
-            @include footer;
+            // @include footer;
             background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/contact-footer-bg.png");
         }
     }
