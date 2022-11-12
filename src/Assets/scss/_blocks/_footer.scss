@@ -18,7 +18,7 @@
         }
         &--contact{
             @include footer;
-            background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/about-footer-bg.png");
+            background-image: url("../../images/footer-left-wheat.png"), url("../../images/footer-right-bg.png"), url("../../images/contact-footer-bg.png");
         }
     }
     &__nav{
@@ -52,12 +52,18 @@
             transform-origin: right;
             transform: scaleX(0);
             transition: transform .3s ease-in-out;
-          }
-          
-          &:hover::before {
+        }
+        
+        &:hover::before {
             transform-origin: left;
             transform: scaleX(1);
-          }
+        }
+        &--contact{
+        color: #000000;
+        &::before {
+            background-color: #000000;
+        }
+        }
     }
     &__social{
         margin: 17px 0 54px;
@@ -94,7 +100,66 @@
                 background: #FFFFFF;
                 border: 1px solid #D42117;
             }
-
+            &--contact{
+                border: 1px solid #000000;
+                &:hover{
+                    background: #000000;
+                    border: 1px solid #000000;
+                }
+                &:hover .footer__social-img{
+                    fill: #FFFFFF; 
+                }
+                &:active .footer__social-img{
+                    fill: #FFFFFF; 
+                }
+                &:active{
+                    background: #000000;
+                    border: 1px solid #000000;
+                }
+            }
+            &--product{
+                &:hover{
+                    border: 1px solid #7095CB
+                }
+                &:hover .footer__social-img{
+                    fill: #7095CB; 
+                }
+                &:active .footer__social-img{
+                    fill: #7095CB; 
+                }
+                &:active{
+                    border: 1px solid #7095CB;
+                }
+            }
+            &--recipe{
+                &:hover{
+                    border: 1px solid #DA9239
+                }
+                &:hover .footer__social-img{
+                    fill: #DA9239; 
+                }
+                &:active .footer__social-img{
+                    fill: #DA9239; 
+                }
+                &:active{
+                    border: 1px solid #DA9239;
+                }
+            }
+            &--about{
+                &:hover{
+                    border: 1px solid #002436;
+                }
+                &:hover .footer__social-img{
+                    fill: #002436; 
+                }
+                &:active .footer__social-img{
+                    fill: #002436; 
+                }
+                &:active{
+                    border: 1px solid #002436;
+                }
+            }
+            
         }
         &-img{
             width: 24px;
@@ -102,7 +167,9 @@
             fill: #FFFFFF;
             cursor: pointer;
             transition: 0.3s;
-            
+            &--contact{
+                fill: #000000;
+            }
         }
     }
     &__bottom{
@@ -111,6 +178,9 @@
             font-size: 15px;
             line-height: 20px;
             color: #FFFFFF;
+            &--contact{
+                color: #000000;
+            }
         }
     }
 }

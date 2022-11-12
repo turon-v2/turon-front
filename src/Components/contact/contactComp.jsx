@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-
+import { LinkBtn } from "../link-btn/linkBtn";
 
 //import images
 import Phone from '../../Assets/images/phone.svg'
@@ -44,7 +44,8 @@ function ContactComp() {
                             <input className='contact__input' type="text" placeholder="Sarlavha"/>
                             {/* <input className='contact__input' type="text" placeholder="" /> */}
                             <input className='contact__input contact__input--big' type="text" placeholder="To`liq matn" />
-                            <button className='contact__btn'>Yuborish</button>
+                            <LinkBtn href="/contact" bgcolor="#CC1C08">Yuborish</LinkBtn>
+                            {/* <button className='contact__btn'>Yuborish</button> */}
                         </form>
                     </div>
                     <div className="contact__right">

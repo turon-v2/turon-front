@@ -86,7 +86,8 @@
             margin-bottom: 8px;
         }
         &-text{
-            width: 290px;
+            max-width: 290px;
+            width: 100%;
             opacity: 0.6;
             font-weight: 400;
             font-size: 14px;
@@ -117,22 +118,22 @@
             opacity: 0.6;
         }
     }
-    &__btn{
-        background-color: #DF953A;
-        border-radius: 7px;
-        border: 1px solid #DF953A;
-        padding: 14px 36px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 25px;
-        color: #FFFFFF;
-        cursor: pointer;
-        transition: 0.5s;
-        &:hover{
-            background-color: #FFFFFF;
-            color: #333333;
-        }
-    }
+    // &__btn{
+    //     background-color: #DF953A;
+    //     border-radius: 7px;
+    //     border: 1px solid #DF953A;
+    //     padding: 14px 36px;
+    //     font-weight: 600;
+    //     font-size: 18px;
+    //     line-height: 25px;
+    //     color: #FFFFFF;
+    //     cursor: pointer;
+    //     transition: 0.5s;
+    //     &:hover{
+    //         background-color: #FFFFFF;
+    //         color: #333333;
+    //     }
+    // }
 }
 @media only screen and (max-width: 1202px) {
     .contact{
@@ -186,12 +187,13 @@
 }
 @media only screen and (max-width: 768px) {
     .contact{
-        margin-bottom: 50px;
+    margin:100px 0 110px;
         &__wrapper{
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content:center;
+            padding: 100px 20px 50px 50px;
         }
         &__box{
             display: none;
@@ -289,6 +291,9 @@
 }
 @media only screen and (max-width: 425px) {
     .contact{
+        &__wrapper{
+            padding: 50px 5px 30px 35px;
+        }
         &__right{
             &-map{
                 height: 250px;

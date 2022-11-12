@@ -1,0 +1,39 @@
+.contactIntro {
+    background-image: url("../../images/decor_1.png"), url("../../images/body_bg.png"), url("../../images/contact-intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: 240px, cover, cover;
+    background-position: top left, center, center;
+
+    &__wrapper {
+        padding: 200px 0 200px;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .contactIntro {
+        &__wrapper{
+            padding: 150px 0 150px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .contactIntro {
+        background-size: 22vw, cover, cover;
+        &__wrapper{
+            padding: 120px 0 100px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .contactIntro {
+        background-size: 120px, cover, cover;
+        &__wrapper{
+            padding: 100px 0 100px;
+        }
+        
+    }
+}
