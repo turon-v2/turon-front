@@ -25,15 +25,7 @@
       column-gap: 40px;
       margin: 170px 0;
     }
-    &__card{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 21px;
-      width: 729px;
-      height: 504px;
-      background-image: url(../../images/Vector-blue.png);
-    }
+    
     &__title{
       font-weight: 800;
       font-size: 96px;
@@ -70,32 +62,6 @@
       letter-spacing: 0.01em;
       color: #000000;
     }
-    &--card2{
-      background-image: url(../../images/Vector-red.png);
-      flex-direction: column;
-    }
-    &--card3{
-      background-image: url(../../images/Vector-dark.png)
-    }
-    &--card4{
-      background-image: url(../../images/Vector-blue-dark.png);
-    }
-    &--card5{
-      background-image: url(../../images/Vector-dark-red.png);
-    }
-    &--card6{
-      background-image: url(../../images/Vector-orange.png);
-      flex-direction: column;
-    }
-    &--card7{
-      background-image: url(../../images/Vector--blue.png);
-    }
-    &--card8{
-      background-image: url(../../images/Vector-green.png);
-    }
-    
-    // img style
-    
     &__img{
       width: 342px;
       transition: transform .2s;
@@ -171,11 +137,6 @@
         line-height: 30px;
         max-width: 350px;
       }
-      &__card{
-        background-size: cover;
-        width: 529px;
-        height: 444px;
-      }
       &__wrap img{
         width: 800px;
       }
@@ -204,11 +165,6 @@
         font-size: 15px;
         line-height: 20px;
       }
-      &__card{
-        background-size: cover;
-        width: 429px;
-        height: 444px;
-      }
       &__wrap h2{
         font-size: 30px;
         line-height: 35px;
@@ -223,26 +179,11 @@
       }
     }
   }
-  
-  @media only screen and (max-width: 927px) {
-    .product{
-      &__card{
-        padding: 21px;
-        width: 529px;
-        height: 504px;
-      }
-    }
-  }
-  
+
   @media only screen and (max-width: 798px) {
     
     .product{
       margin-top: 80px;
-      &__card{
-        padding: 21px;
-        width: 529px;
-        height: 504px;
-      }
       &__wrap img{
         width: 550px;
       }
@@ -292,9 +233,6 @@
         font-size: 15px;
         line-height: 25px;
       }
-      &__card{
-        padding: 5px;
-      }
       &__wrap img{
         width: 550px;
       }
@@ -341,65 +279,6 @@
       &__wrap img{
         width: 320px;
       }
-      &__card{
-        transition: all 0.3s ease-in-out;
-        padding: 10px;
-        // width: 260px;
-        // height: 340px;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #2db2ff
-        }
-      }
-      &--card2{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #AA2323;
-        }
-      }
-      &--card3{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #00A3EE;
-        }
-      }
-      &--card4{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #0070B8;
-        }
-      }
-      &--card5{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #5F0404;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #D38945;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #C0EBFF;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out; 
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #29CAC0;
-        }
-      }
     }
   }
   @media only screen and (max-width: 425px) {
@@ -408,10 +287,6 @@
       &__img{
         width: 150px;
         height: 200px;
-      }
-      &__card{
-         width: 260px;
-        height: 340px;
       }
     }
   }

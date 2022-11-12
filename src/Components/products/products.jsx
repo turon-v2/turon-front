@@ -6,6 +6,9 @@ import Prod1 from "../../Assets/images/prod2.png"
 import prod2 from "../../Assets/images/prod3.png"
 import prod3 from "../../Assets/images/prod4.png"
 import groupProd from "../../Assets/images/grop-prod.png"
+import { LinkBtn } from "../link-btn/linkBtn"
+import { ProductCard } from "../productCard/productCard"
+// import { ProductImage } from "../productImage/productImage"
 
 
 function Products() {
@@ -22,32 +25,30 @@ function Products() {
           yaxshi ko`radigan pazandalarimiz uchun mo`ljallangan. 
         </p>
         <div className="product__wrapper">
-          <div className="product__card">
-            <Image src={Prod1} alt="turon img" className="product__img"/>
-          </div>
-          <div className="product__card product--card2">
-            <h3 className="product__title">
+          <ProductCard bgcolor="#B2D9ED">
+          <Image src={Prod1} alt="turon img" className="product__img"/>
+          </ProductCard>
+          <ProductCard bgcolor="#AA2323">
+          <h3 className="product__title">
               Turon 
             </h3>
             <p className="product__info">
               Xamirli taomlar hamda pishiriqlar 
               tayyorlash uchun tavsiya etiladi.
             </p>
-            <button className="product__btn">
-              Batafsil
-            </button>
-          </div>
-          <div className="product__card product--card3">
-            <Image src={prod2} alt="turon img" className="product__img product--img2"/>
-          </div>
-          <div className="product__card product--card4">
-            <Image src={prod3}alt="turon img" className="product__img product--img3"/>
-          </div>
-          <div className="product__card product--card5">
-            <Image src={Prod1} alt="turon img" className="product__img"/>
-          </div>
-          <div className="product__card product--card6">
-            <h3 className="product__title">
+            <LinkBtn href="/#" bgcolor="#CC1C08">Batafsil</LinkBtn>
+          </ProductCard>
+          <ProductCard bgcolor="#00A3EE">
+          <Image src={prod2} alt="turon img" className="product__img product--img2"/>
+          </ProductCard>
+          <ProductCard bgcolor="#0070B8">
+          <Image src={prod3} alt="turon img" className="product__img product--img3"/>
+          </ProductCard>
+          <ProductCard bgcolor="#5F0404">
+          <Image src={prod2} alt="turon img" className="product__img "/>
+          </ProductCard>
+          <ProductCard  bgcolor="#D38945 ">
+          <h3 className="product__title">
               Turon 
             </h3>
             <p className="product__paragraph">
@@ -55,13 +56,13 @@ function Products() {
               mazali nonlar, shuningdek shirinliklar 
               tayyorlash uchun tavsiya etiladi.
             </p>
-          </div>
-          <div className="product__card product--card7">
-            <Image src={prod2} alt="turon img" className="product__img "/>
-          </div>
-          <div className="product__card product--card8">
-            <Image src={prod3} alt="turon img" className="product__img "/>
-          </div>
+          </ProductCard>
+          <ProductCard  bgcolor="#29CAC0">
+          <Image src={prod3} alt="turon img" className="product__img "/>
+          </ProductCard>
+          <ProductCard  bgcolor="#C0EBFF">
+          <Image src={Prod1} alt="turon img" className="product__img"/>
+          </ProductCard>
         </div>
         <div className="product__wrap">
           <Image src={groupProd} alt="turon imgs"/>
