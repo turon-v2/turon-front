@@ -1,407 +1,447 @@
 .product{
-    padding: 100px 0;
-    &__caption{
-      font-weight: 800;
-      font-size: 64px;
-      line-height: 91px;
-      text-align: center;
-      letter-spacing: 0.06em;
-      color: #25317B;
+  margin-top: 150px;
+  padding: 100px 0;
+  &__caption{
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 91px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #25317B;
+  }
+  &__description{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 66px;
+    text-align: center;
+    color: #25317B;
+  }
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 160px;
+    column-gap: 40px;
+    margin: 170px 0;
+    transform-style: preserve-3d;
+  }
+  &__card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px;
+    width: 729px;
+    height: 504px;
+    transform-style: preserve-3d;
+    background-color: #25317B;
+    fill: #25317B !important;
+    -webkit-mask-image: url("../../images/prod-item-bg.svg");
+    mask-image: url("../../images/prod-item-bg.svg");
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: 0.5s;
+    &:hover{
+      filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
     }
-    &__description{
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 66px;
-      text-align: center;
-      color: #25317B;
+    &:hover .product__box{    
+      transform: translateZ(20px) scaleY(1);
     }
+  }
+  &__img{
+    width: 342px;
+    &--box{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: 2;
+    }
+  }
+  &__box{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    left: 50px;
+    background-image: url(../../images/Vector-red.png);
+    transform: translateZ(20px) scaleY(0);
+    padding: 45px;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 96px;
+    // line-height: 131px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+  &__info{
+    // margin: 35px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &__btn{
+    font-weight: 700;
+    font-size: 24px;
+    color: #AA2323;
+    background-image: url(../../images/btn.png);
+    background-size: cover;
+    border: transparent;
+    padding: 16px 59px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__paragraph{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
+  &--card2{
+    background-image: url(../../images/Vector-red.png);
+    flex-direction: column;
+  }
+  &--card3{
+    background-image: url(../../images/Vector-dark.png)
+  }
+  &--card4{
+    background-image: url(../../images/Vector-blue-dark.png);
+  }
+  &--card5{
+    background-image: url(../../images/Vector-dark-red.png);
+  }
+  &--card6{
+    background-image: url(../../images/Vector-orange.png);
+    flex-direction: column;
+  }
+  &--card8{
+    background-image: url(../../images/Vector-green.png);
+  }
+  
+  // img style
+  
+  &--img2{
+    width: 404px;
+  }
+  &--img3{
+    width: 398px;
+  }
+  
+  // product wrap
+  
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__wrap img{
+    width: 1072px;
+  }
+  &__wrap h2{
+    max-width: 1066px;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 91px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #D42117;
+    margin: 50px 0;
+  }
+  &__wrap p{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 69px;
+    text-align: center;
+    color: #D42117;
+    max-width: 1250px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1528px) {
+  .product{
+    margin-top: 120px;
     &__wrapper{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      row-gap: 160px;
-      column-gap: 40px;
-      margin: 170px 0;
-    }
-    &__card{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 21px;
-      width: 729px;
-      height: 504px;
-      background-image: url(../../images/Vector-blue.png);
-    }
-    &__title{
-      font-weight: 800;
-      font-size: 96px;
-      line-height: 131px;
-      text-align: center;
-      letter-spacing: 0.01em;
-      color: #FFFFFF;
-    }
-    &__info{
-      margin: 35px 0;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 70px;
-      text-align: center;
-      color: #FFFFFF;
-    }
-    &__btn{
-      font-weight: 700;
-      font-size: 24px;
-      color: #AA2323;
-      background-image: url(../../images/btn.png);
-      background-size: cover;
-      border: transparent;
-      padding: 16px 59px;
-      &:hover{
-        cursor: pointer;
-      }
-    }
-    &__paragraph{
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 50px;
-      text-align: center;
-      letter-spacing: 0.01em;
-      color: #000000;
-    }
-    &--card2{
-      background-image: url(../../images/Vector-red.png);
-      flex-direction: column;
-    }
-    &--card3{
-      background-image: url(../../images/Vector-dark.png)
-    }
-    &--card4{
-      background-image: url(../../images/Vector-blue-dark.png);
-    }
-    &--card5{
-      background-image: url(../../images/Vector-dark-red.png);
-    }
-    &--card6{
-      background-image: url(../../images/Vector-orange.png);
-      flex-direction: column;
-    }
-    &--card7{
-      background-image: url(../../images/Vector--blue.png);
-    }
-    &--card8{
-      background-image: url(../../images/Vector-green.png);
-    }
-    
-    // img style
-    
-    &__img{
-      width: 342px;
-    }
-    &--img2{
-      width: 404px;
-    }
-    &--img3{
-      width: 398px;
-    }
-    
-    // product wrap
-    
-    &__wrap{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    &__wrap img{
-      width: 1072px;
-    }
-    &__wrap h2{
-      max-width: 1066px;
-      font-weight: 800;
-      font-size: 64px;
-      line-height: 91px;
-      text-align: center;
-      letter-spacing: 0.06em;
-      color: #D42117;
-      margin: 50px 0;
-    }
-    &__wrap p{
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 69px;
-      text-align: center;
-      color: #D42117;
-      max-width: 1250px;
       margin-top: 50px;
     }
+    &__caption{
+      font-size: 40px;
+      line-height: 65px;
+    }
+    &__description{
+      font-size: 25px;
+      line-height: 33px;
+    }
+    &__img {
+      width: 300px;
+    }
+    &__title{
+      font-size: 30px;
+    }
+    &__info{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__paragraph{
+      font-size: 15px;
+      line-height: 30px;
+      max-width: 350px;
+    }
+    &__card{
+      background-size: cover;
+      width: 529px;
+      height: 444px;
+    }
+    &__wrap img{
+      width: 800px;
+    }
+    &__wrap h2{
+      font-size: 40px;
+      line-height: 65px;
+    }
+    &__wrap p {
+      font-size: 25px;
+      line-height: 45px;
+    }
   }
+}
+
+
+@media only screen and (max-width: 1128px) {
+  .product{
+    margin-top: 100px;
+    &__img{
+      width: 280px;
+    }
+    &__title{
+      font-size: 30px;
+    }
+    &__info{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__card{
+      background-size: cover;
+      width: 429px;
+      height: 444px;
+    }
+    &__wrap h2{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__wrap p {
+      font-size: 25px;
+      line-height: 25px;
+      max-width: 800px;
+    }
+    &__wrap img{
+      width: 800px;
+    }
+  }
+}
+
+@media only screen and (max-width: 927px) {
+  .product{
+    &__card{
+      padding: 21px;
+      width: 529px;
+      height: 504px;
+    }
+  }
+}
+
+@media only screen and (max-width: 798px) {
   
-  @media only screen and (max-width: 1528px) {
-    .product{
-      &__wrapper{
-        margin-top: 50px;
+  .product{
+    margin-top: 80px;
+    &__card{
+      padding: 21px;
+      width: 529px;
+      height: 504px;
+    }
+    &__wrap img{
+      width: 550px;
+    }
+    &__wrap h2{
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .product{
+    margin-top: 70px;
+    &__wrapper{
+      row-gap: 60px;
+      column-gap: 20px;
+      margin: 40px 0;
+    }
+    &__caption{
+      font-size: 20px;
+      line-height: 35px;
+    }
+    &__description{
+      font-size: 20px;
+      line-height: 23px;
+    }
+    &__title{
+      font-size: 30px;
+    }
+    &__info{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__paragraph{
+      font-size: 15px;
+      line-height: 30px;
+      max-width: 350px;
+    }
+    &__wrap img{
+      width: 800px;
+    }
+    &__wrap h2{
+      font-size: 20px;
+      line-height: 35px;
+      margin: 10px 0;
+    }
+    &__wrap p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__card{
+      padding: 5px;
+    }
+    &__wrap img{
+      width: 550px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product{
+    margin-top: 60px;
+    &__wrapper{
+      row-gap: 60px;
+      column-gap: 20px;
+      margin: 40px 0;
+    }
+    &__caption{
+      font-size: 20px;
+      line-height: 35px;
+    }
+    &__description{
+      font-size: 20px;
+      line-height: 23px;
+    }
+    &__title{
+      font-size: 30px;
+    }
+    &__info{
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__paragraph{
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 350px;
+    }
+    &__wrap h2{
+      font-size: 20px;
+      line-height: 35px;
+      margin: 10px 0;
+    }
+    &__wrap p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__wrap img{
+      width: 320px;
+    }
+    &__card{
+      transition: all 0.3s ease-in-out;
+      padding: 10px;
+      // width: 260px;
+      // height: 340px;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #2db2ff
       }
-      &__caption{
-        font-size: 40px;
-        line-height: 65px;
+    }
+    &--card2{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #AA2323;
       }
-      &__description{
-        font-size: 25px;
-        line-height: 33px;
+    }
+    &--card3{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #00A3EE;
       }
-      &__img {
-        width: 300px;
+    }
+    &--card4{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #0070B8;
       }
-      &__title{
-        font-size: 30px;
+    }
+    &--card5{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #5F0404;
       }
-      &__info{
-        font-size: 15px;
-        line-height: 20px;
+    }
+    &--card6{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #D38945;
       }
-      &__paragraph{
-        font-size: 15px;
-        line-height: 30px;
-        max-width: 350px;
+    }
+    &--card6{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #C0EBFF;
       }
-      &__card{
-        background-size: cover;
-        width: 529px;
-        height: 444px;
-      }
-      &__wrap img{
-        width: 800px;
-      }
-      &__wrap h2{
-        font-size: 40px;
-        line-height: 65px;
-      }
-      &__wrap p {
-        font-size: 25px;
-        line-height: 45px;
+    }
+    &--card6{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #29CAC0;
       }
     }
   }
-  
-  
-  @media only screen and (max-width: 1128px) {
-    .product{
-      &__img{
-        width: 280px;
-      }
-      &__title{
-        font-size: 30px;
-      }
-      &__info{
-        font-size: 15px;
-        line-height: 20px;
-      }
-      &__card{
-        background-size: cover;
-        width: 429px;
-        height: 444px;
-      }
-      &__wrap h2{
-        font-size: 30px;
-        line-height: 35px;
-      }
-      &__wrap p {
-        font-size: 25px;
-        line-height: 25px;
-        max-width: 800px;
-      }
-      &__wrap img{
-        width: 800px;
-      }
+}
+@media only screen and (max-width: 425px) {
+  .product{
+    margin-top: 50px;
+    &__img{
+      width: 150px;
+      height: 200px;
+    }
+    &__card{
+      width: 260px;
+      height: 340px;
     }
   }
-  
-  @media only screen and (max-width: 927px) {
-    .product{
-      &__card{
-        padding: 21px;
-        width: 529px;
-        height: 504px;
-      }
-    }
-  }
-  
-  @media only screen and (max-width: 798px) {
-    
-    .product{
-      
-      &__card{
-        padding: 21px;
-        width: 529px;
-        height: 504px;
-      }
-      &__wrap img{
-        width: 550px;
-      }
-      &__wrap h2{
-        margin: 20px 0;
-      }
-    }
-  }
-  
-  @media only screen and (max-width: 798px) {
-    .product{
-      &__wrapper{
-        row-gap: 60px;
-        column-gap: 20px;
-        margin: 40px 0;
-      }
-      &__caption{
-        font-size: 20px;
-        line-height: 35px;
-      }
-      &__description{
-        font-size: 20px;
-        line-height: 23px;
-      }
-      &__title{
-        font-size: 30px;
-      }
-      &__info{
-        font-size: 15px;
-        line-height: 20px;
-      }
-      &__paragraph{
-        font-size: 15px;
-        line-height: 30px;
-        max-width: 350px;
-      }
-      &__wrap img{
-        width: 800px;
-      }
-      &__wrap h2{
-        font-size: 20px;
-        line-height: 35px;
-        margin: 10px 0;
-      }
-      &__wrap p {
-        font-size: 15px;
-        line-height: 25px;
-      }
-      &__card{
-        padding: 5px;
-      }
-      &__wrap img{
-        width: 550px;
-      }
-    }
-  }
-  
-  @media only screen and (max-width: 550px) {
-    .product{
-      &__wrapper{
-        row-gap: 60px;
-        column-gap: 20px;
-        margin: 40px 0;
-      }
-      &__caption{
-        font-size: 20px;
-        line-height: 35px;
-      }
-      &__description{
-        font-size: 20px;
-        line-height: 23px;
-      }
-      &__title{
-        font-size: 30px;
-      }
-      &__info{
-        font-size: 14px;
-        line-height: 20px;
-      }
-      &__paragraph{
-        font-size: 14px;
-        line-height: 20px;
-        max-width: 350px;
-      }
-      &__wrap h2{
-        font-size: 20px;
-        line-height: 35px;
-        margin: 10px 0;
-      }
-      &__wrap p {
-        font-size: 15px;
-        line-height: 25px;
-      }
-      &__wrap img{
-        width: 320px;
-      }
-      &__card{
-        transition: all 0.3s ease-in-out;
-        padding: 10px;
-        // width: 260px;
-        // height: 340px;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #2db2ff
-        }
-      }
-      &--card2{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #AA2323;
-        }
-      }
-      &--card3{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #00A3EE;
-        }
-      }
-      &--card4{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #0070B8;
-        }
-      }
-      &--card5{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #5F0404;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #D38945;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #C0EBFF;
-        }
-      }
-      &--card6{
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 5px #29CAC0;
-        }
-      }
-    }
-  }
-  @media only screen and (max-width: 425px) {
-    .product{
-      &__img{
-        width: 150px;
-        height: 200px;
-      }
-      &__card{
-         width: 260px;
-        height: 340px;
-      }
-    }
-  }
+}
