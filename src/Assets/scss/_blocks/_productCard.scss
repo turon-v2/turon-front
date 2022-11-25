@@ -12,6 +12,15 @@
     mask-size: cover;
     -webkit-mask-image: url("../../images/product-bg.svg");
     mask-image: url("../../images/product-bg.svg");
+    // transform-style: preserve-3d;
+    // z-index: 0;
+    // transition: 0.5s;
+    // &:hover{
+    //   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+    // }
+    // &:hover .product__box{    
+    //   transform: translateZ(20px) scaleY(1);
+    // }
 }
 
 @media only screen and (max-width: 1528px) {
