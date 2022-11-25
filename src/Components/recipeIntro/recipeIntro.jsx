@@ -9,12 +9,13 @@ function RecipeIntro() {
 
   return (
     <>
-    <div className="container">
-                <div className="recipeIntro__wrapper">
-                    
-                    
-                </div> 
-            </div>
+    <section className="recipeIntro">
+      <div className="container">
+        <div className="recipeIntro__wrapper">
+        <iframe className="recipeIntro__video" width="1280" height="720" src="https://www.youtube.com/embed/5fcsba_DvEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
     </>
   )
 }

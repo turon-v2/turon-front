@@ -15,7 +15,7 @@ export default function Product() {
         <script async type="text/javascript" src="vanilla-tilt.js"></script>
       </Head>
 
-      <Layout>
+      <Layout bgPathLay="product">
         <ProductIntro/>
         <Products/>
       </Layout>

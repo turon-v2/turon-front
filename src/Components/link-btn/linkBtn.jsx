@@ -7,4 +7,4 @@ export const LinkBtn = ({ children, href, bgcolor: backgroundColor }) => {
       {children}
     </Link>
   );
-};
+}; 

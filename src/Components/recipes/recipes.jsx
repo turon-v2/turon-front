@@ -14,6 +14,8 @@ function Recipes() {
             <div className='recipe'>
                 <div className="container">
                     <div className="recipe__wrapper">
+                        <h1 className="recipe__title">Bizning retseptlar</h1>
+                        <p className="recipe__text">Mazali hamda foydali taomlarni tayyorlashni sevadigan qo`li shirin ayol-qizlarimizni kamtarona Turon oshxonasiga taklif qilamiz. Biz bilan yangi ta`mlarni kashf eting.</p>
                         <ul className='recipe__list'>
                             <li className='recipe__item'>
                                 <Image className="recipe__item-img" src={RecipeBg} alt="homerecipe slider" width={'427'} height={'254'} />
