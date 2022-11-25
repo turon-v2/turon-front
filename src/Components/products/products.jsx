@@ -2,13 +2,12 @@ import Image from "next/image"
 import Link from "next/link"
 
 // import images
-import Prod1 from "../../Assets/images/prod2.png"
+import prod1 from "../../Assets/images/prod2.png"
 import prod2 from "../../Assets/images/prod3.png"
 import prod3 from "../../Assets/images/prod4.png"
 import groupProd from "../../Assets/images/grop-prod.png"
 import { LinkBtn } from "../link-btn/linkBtn"
 import { ProductCard } from "../productCard/productCard"
-// import { ProductImage } from "../productImage/productImage"
 
 
 function Products() {
@@ -26,7 +25,7 @@ function Products() {
         </p>
         <div className="product__wrapper">
           <ProductCard bgcolor="#B2D9ED">
-          <Image src={Prod1} alt="turon img" className="product__img"/>
+          <Image src={prod1} alt="turon img" className="product__img"/>
           </ProductCard>
           <ProductCard bgcolor="#AA2323">
           <h3 className="product__title">
@@ -61,7 +60,7 @@ function Products() {
           <Image src={prod3} alt="turon img" className="product__img "/>
           </ProductCard>
           <ProductCard  bgcolor="#C0EBFF">
-          <Image src={Prod1} alt="turon img" className="product__img"/>
+          <Image src={prod1} alt="turon img" className="product__img"/>
           </ProductCard>
         </div>
         <div className="product__wrap">
