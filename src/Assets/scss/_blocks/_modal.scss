@@ -5,9 +5,10 @@
     right: 0;
     bottom: 0;
     background-color: #fff;
-    background-image: url("../../images/body_bg.png");
+    background-image: url("../../images/body_bg.png"), url("../../images/wheat-modal.png"), url("../../images/decor_1.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover, 500px, 350px;
+    background-position: center, bottom -120px right 100px, top left;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,17 +23,25 @@
     &__list{
         height: auto;
         display: grid;
-        gap: 60px;
+        gap: 0 120px;
         grid-template-areas: 
-        "home . product"
-        "precipe about contact";
+        "home  product"
+        "precipe  contact"
+        " about about";
     }
     &__item{
+        padding: 50px 30px;
         &:first-child a{
             grid-area: home;
         }
         &:nth-child(2){
             grid-area: product;
+            &:hover{
+            background-image: url("../../images/modal_bg_icon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            }
         }
         &:nth-child(3){
             grid-area: precipe;

@@ -7,7 +7,7 @@ import kitchenImage from "../../Assets/images/home_recipe.jpg";
 
 export const HomeKitchen = () => {
   return (
-    <section style={{ color: "#DF953A !important", padding: "150px 0 150px" }} className="hkichchen">
+    <section style={{ color: "#DF953A !important" }} className="hkichchen">
       <div className="container">
         <div className="homeAbout__wrapper">
           <div className="homeAbout__box">

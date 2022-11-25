@@ -16,7 +16,7 @@ function Modal({active}) {
             <Link href="/recipe" className="modal__link">Retseplar</Link>
           </li>
           <li className="modal__item">
-            <Link href="/about" className="modal__link">Haqida</Link>
+            <Link href="/about" className="modal__link">Korxona haqida</Link>
           </li>
           <li className="modal__item">
             <Link href="/contact" className="modal__link">Aloqa</Link>
