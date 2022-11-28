@@ -20,7 +20,7 @@ function Header() {
             <Link style={{position: isactive && "fixed"}} className="header__logo-link" href={'/'}>
               <Image className="header__logo" src={Logo} alt="logo" width="237" height="87"/>
               </Link> 
-            <div className="header__burger--box" style={{position: isactive && "fixed"}}>
+            <div className="header__burger--box" style={{position: isactive && "fixed"}} data-aos="fade-left">
                 <button className={!isactive ? "header__burger" : "header__burger header__burger--active"} onClick={() => setIsActive(!isactive)}>
                     <span className="header__line"></span>
                     <span className="header__line"></span>

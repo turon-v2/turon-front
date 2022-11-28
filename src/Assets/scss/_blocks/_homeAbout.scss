@@ -79,10 +79,10 @@
         width: 445px;
         height: 650px;
         object-fit: cover;
+        transform: rotate(-8.9deg) translate(50px, 0);
     }
     &__box{
         margin-right: 120px;
-        transform: rotate(-8.9deg) translate(50px, 0);
     }
     &__block{
         max-width: 984px;
