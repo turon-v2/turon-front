@@ -61,19 +61,25 @@
   //     z-index: 2;
   //   }
   }
-  // &__box{
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 50px;
-  //   left: 50px;
-  //   background-image: url(../../images/Vector-red.png);
-  //   transform: translateZ(20px) scaleY(0);
-  //   padding: 45px;
-  //   transform-origin: top;
-  //   transform-style: preserve-3d;
-  //   transition: 0.5s;
-  //   z-index: 3;
-  // }
+  &__box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    // background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.123) 10%, rgba(0, 0, 0, 0.356) 63%);
+    transform: translateZ(-20px) scaleY(0);
+    padding: 45px;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    z-index: 3;
+  }
   &__title{
     font-weight: 800;
     font-size: 96px;

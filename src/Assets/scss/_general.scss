@@ -13,6 +13,27 @@ html {
     text-decoration: none;
 }
 
+::selection {
+    background: transparent!important;
+    color: #FF0000;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+}
+
 ul {
     list-style-type: none;
 }
