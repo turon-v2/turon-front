@@ -24,23 +24,24 @@
         height: auto;
         display: grid;
         gap: 0 120px;
+        margin-top: 50px;
         grid-template-areas: 
         "home  product"
         "precipe  contact"
         " about about";
     }
     &__item{
-        padding: 50px 30px;
+        padding: 20px 30px;
         &:first-child a{
             grid-area: home;
         }
         &:nth-child(2){
             grid-area: product;
-            &:hover{
-            background-image: url("../../images/modal_bg_icon.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
+            &:hover {
+                background-image: url("../../images/modal_bg_icon.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
             }
         }
         &:nth-child(3){
@@ -63,6 +64,25 @@
 
 @media screen and (max-width: 1024px) {
     .modal{
+        background-size: cover, 400px, 300px;
+        background-position: center, bottom -120px right -20px, top left;
+        &__list{
+            gap: 15px;
+            grid-template-areas: 
+            "home  product"
+            "precipe  contact"
+            " about about";
+        }
+        &__link{
+            font-size: 40px;
+            line-height: normal;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .modal{
+        background-size: cover, 350px, 250px;
+        background-position: center, bottom -120px right -40px, top left;
         &__list{
             gap: 15px;
             grid-template-areas: 
@@ -72,8 +92,18 @@
             "about"
             "contact";
         }
+        &__item{
+            padding: 0px;
+        }
+        
+    }
+}
+@media screen and (max-width: 425px) {
+    .modal{
+        background-size: cover, 300px, 200px;
+        background-position: center, bottom -120px right -65px, top left;
         &__link{
-            font-size: 40px;
+            font-size: 32px;
             line-height: normal;
         }
     }
