@@ -1,7 +1,7 @@
 .about{
     margin: 200px 0 110px;
+    overflow-x: hidden;
     &__wrapper{
-        // background-color: #FFFFFF;
         border-radius: 30px;
         padding: 70px 50px 93px;
     }
@@ -186,18 +186,8 @@
         }
         &__bottom{
             &-img{
-                width: 330px;
-                height: 200px;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 375px) {
-    .about{
-        &__bottom{
-            &-img{
-                width: 300px;
-                height: 180px;
+                width: 100%;
+                height: auto;
             }
         }
     }
