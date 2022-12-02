@@ -9,8 +9,8 @@
         &-link{
             position: absolute;
             z-index: 100;
-            left: 0;
-            right: 0;
+            left: calc(50% - 118px);
+            right: calc(50% - 118px);
             top: 50px;
         }
     }

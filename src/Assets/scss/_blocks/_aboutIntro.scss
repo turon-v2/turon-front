@@ -3,13 +3,12 @@
     background-repeat: no-repeat;
     background-size: 240px, cover, cover;
     background-position: top left, center, center;
+    // overflow-x: hidden;
 
     &__wrapper {
         position: relative;
         padding: 350px 0 600px;
         display: flex;
-        // align-items: center;
-        // justify-content: center;
     }
 
     &__img {
